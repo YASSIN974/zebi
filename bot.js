@@ -11,6 +11,8 @@ const client = new Discord.Client();
  
  
  
+ 
+ 
 const prefix = "$"
 client.on('message', async msg => {
     if (msg.author.bot) return undefined;
@@ -222,10 +224,10 @@ function play(guild, song) {
     .setThumbnail(`${song.xnx}`)
     .setColor('#ff0000')
     .setTimestamp()
-    
- 
- 
-      
+    }).then(love => {
+        love.react('👍').then(r=>{
+        love.react('👎').then(r =>{
+        love.delete(2000)
    
  //.then(message =>{message.delete(2000)})
  
@@ -236,6 +238,7 @@ function play(guild, song) {
 })
 }
 });
+ 
  
  
 client.login(process.env.BOT_TOKEN);
