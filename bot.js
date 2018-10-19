@@ -222,10 +222,10 @@ function play(guild, song) {
     .setThumbnail(`${song.xnx}`)
     .setColor('#ff0000')
     .setTimestamp()
-    }).then(love => {
+    
  
  
-        love.delete(2000)
+      
    
  //.then(message =>{message.delete(2000)})
  
