@@ -1,2 +1,2 @@
-worker: node bot.js
+* text=auto eol=lf
 
